@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/static/style.css" rel="stylesheet">
+        <title>FlickList</title>
+        <style>
+         body{
+            background-image: url("{{url_for('static', filename='movies1.png')}}");
+            background-color: #b1c6c5;
+            background-position: cover;
+            background-size:cover;
+            background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="layer">
+
+        </div>
+        <div class="layer2">
+
+        </div>
+        <div class="layer3">
+
+        </div>
+        <h1>
+            <a id="home" href="/">FlickList</a>
+        </h1>   
+        
+        {% block content %}
+        {% endblock %}  
+</body>
+</html>
